@@ -1,0 +1,64 @@
+Main B.Tech CSE 4th Year (7th Semester) ka student hoon aur apna Final Year Project bana raha hoon.
+
+Project Name:
+PP_StockVerse AI
+
+Tagline:
+Learn • Analyze • Practice • Grow
+
+Project Goal:
+Ye ek AI-powered Stock Learning & Paper Trading Platform hoga. Isme real money trading nahi hogi. User virtual money se trading seekhega aur AI uski mistakes, psychology aur portfolio ko analyze karega.
+
+Tech Stack:
+Frontend: React.js + Tailwind CSS
+Backend: Spring Boot (Java)
+Database: MySQL
+Authentication: JWT
+Charts: TradingView Lightweight Charts
+AI: Gemini API
+Market Data API: Alpha Vantage / Twelve Data / Yahoo Finance
+
+Selected Features:
+
+1. AI Mentor (Hindi + English)
+2. Emotion Tracker
+3. AI Trading Diary
+4. AI Mistake Detection
+5. Learning Feed
+6. Goal Based Portfolio
+7. AI Weekly Report (PDF)
+8. Stock Battle (Paper Trading Competition)
+9. Daily AI Challenge
+10. Portfolio Health Score
+11. AI News Summary
+12. Hidden Opportunities
+13. Community Discussion
+14. Personalized AI Learning Path
+
+Extra Modules:
+- Login & Signup
+- Dashboard
+- Live Market
+- Watchlist
+- Paper Trading
+- Portfolio
+- Analytics
+- Leaderboard
+- XP & Badges
+- User Profile
+
+Development Rule:
+Project ko industry-level banana hai.
+Sab kuch step-by-step banana hai.
+Pehle planning, database, APIs, architecture aur UI finalize karna hai.
+Uske baad coding karni hai.
+Har module professional folder structure aur clean architecture follow kare.
+Responsive UI aur modern design hona chahiye.
+
+Important:
+Har code ko explain karna.
+Best practices follow karna.
+Project ko GitHub-ready banana.
+Future deployment ko dhyan me rakhkar banana.
+
+Ab previous conversation continue karo aur jis stage par planning ruki thi usi se aage badho.

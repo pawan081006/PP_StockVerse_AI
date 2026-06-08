@@ -1,0 +1,45 @@
+# PP_StockVerse AI
+
+## Tagline
+
+Learn • Analyze • Practice • Grow
+
+## Project Overview
+
+PP_StockVerse AI is an AI-powered Stock Learning and Paper Trading Platform designed for beginners and intermediate investors. The platform allows users to learn stock market concepts, practice trading with virtual money, analyze their portfolio using AI, and improve their decision-making skills without risking real money.
+
+## Project Objective
+
+The main objective of this project is to provide a safe and intelligent environment where users can learn investing, perform paper trading, receive AI-based guidance, track their emotions and mistakes, and build confidence before entering the real stock market.
+
+## Target Users
+
+* College Students
+* Beginners in Stock Market
+* Long-Term Investors
+* Swing Traders
+* Learning Enthusiasts
+
+## Main Modules
+
+* User Authentication
+* Live Market Dashboard
+* Paper Trading
+* Portfolio Management
+* AI Mentor
+* AI News Summary
+* AI Trading Diary
+* Emotion Tracker
+* Learning Feed
+* Community Discussion
+* Leaderboard
+* Analytics Dashboard
+
+## Future Scope
+
+* Mobile Application
+* Real Broker API Integration
+* AI Voice Assistant
+* Multi-Language Support
+* Premium Learning Courses
+* Advanced Portfolio Analytics

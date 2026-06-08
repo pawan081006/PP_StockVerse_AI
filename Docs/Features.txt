@@ -1,0 +1,158 @@
+# PP_StockVerse AI - Features Documentation
+
+## 1. User Authentication
+
+* User Registration
+* Secure Login
+* JWT Authentication
+* Forgot Password
+* Profile Management
+
+---
+
+## 2. Dashboard
+
+* Market Overview
+* Portfolio Summary
+* Watchlist
+* Top Gainers & Losers
+* AI Suggestions
+
+---
+
+## 3. Stock Search
+
+* Search Stock
+* Company Details
+* Live Price
+* Historical Chart
+* Market Cap
+* PE Ratio
+
+---
+
+## 4. Paper Trading
+
+* Virtual Money
+* Buy Stocks
+* Sell Stocks
+* Order History
+* Profit & Loss
+
+---
+
+## 5. Portfolio Management
+
+* Holdings
+* Investment Value
+* Profit & Loss
+* Portfolio Allocation
+* Portfolio Health Score
+
+---
+
+## 6. AI Mentor
+
+* Stock Explanation
+* Investment Guidance
+* Beginner Help
+* Market Terms Explanation
+
+---
+
+## 7. AI News Summary
+
+* Latest News
+* AI Summary
+* Positive/Negative Sentiment
+
+---
+
+## 8. Emotion Tracker
+
+* Fear
+* Greed
+* FOMO
+* Confidence
+* AI Analysis
+
+---
+
+## 9. AI Trading Diary
+
+* Daily Notes
+* AI Mistake Analysis
+* Suggestions
+
+---
+
+## 10. Learning Feed
+
+* Daily Lessons
+* Short Tips
+* Market Concepts
+* Finance Education
+
+---
+
+## 11. AI Weekly Report
+
+* Weekly Performance
+* Best Trade
+* Worst Trade
+* AI Suggestions
+
+---
+
+## 12. Goal Based Portfolio
+
+* Bike Goal
+* Car Goal
+* House Goal
+* Laptop Goal
+* AI Planning
+
+---
+
+## 13. Stock Battle
+
+* Friend Challenge
+* Leaderboard
+* Competition
+* Ranking
+
+---
+
+## 14. Daily AI Challenge
+
+* Quiz
+* Prediction
+* XP Points
+* Badges
+
+---
+
+## 15. Community
+
+* Discussion
+* Comments
+* Stock Opinions
+* Learning Community
+
+---
+
+## 16. Admin Panel
+
+* User Management
+* Stock Management
+* Reports
+* Analytics
+* AI Logs
+
+Future Features:
+
+* Mobile App
+* Voice AI Assistant
+* Multi Language
+* Dark Mode
+* Premium Membership

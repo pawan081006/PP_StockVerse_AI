@@ -1,0 +1,78 @@
+# PP_StockVerse AI - Tech Stack
+
+## Frontend
+
+* React.js
+* Tailwind CSS
+* React Router DOM
+* Axios
+* React Icons
+* TradingView Lightweight Charts
+
+## Backend
+
+* Java 21
+* Spring Boot
+* Spring Security
+* JWT Authentication
+* Spring Data JPA
+* REST API
+
+## Database
+
+* MySQL 8.0
+
+## AI Integration
+
+* Gemini API
+
+## Market Data APIs
+
+* Alpha Vantage
+* Twelve Data
+* Yahoo Finance (Backup)
+
+## Development Tools
+
+* VS Code
+* IntelliJ IDEA Community
+* MySQL Workbench
+* Postman
+* Git
+* GitHub
+* Chrome Developer Tools
+
+## Build Tools
+
+* Maven
+* npm
+
+## Deployment (Future)
+
+* Render
+* Vercel
+* Railway
+
+## Version Control
+
+* Git
+* GitHub
+
+## Project Architecture
+
+Frontend (React)
+│
+▼
+REST API (Spring Boot)
+│
+▼
+Business Logic
+│
+▼
+MySQL Database
+│
+▼
+Gemini API + Market APIs
+
+Project Development Flow:
+Planning → Database → Backend → Frontend → Testing → Deployment

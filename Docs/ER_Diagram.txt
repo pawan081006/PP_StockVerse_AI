@@ -1,0 +1,151 @@
+========================================================
+PP_StockVerse AI
+07_ER_Diagram.txt
+========================================================
+
+WHAT IS ER DIAGRAM?
+
+ER Diagram (Entity Relationship Diagram) shows:
+
+1. Entities (Tables)
+2. Attributes (Columns)
+3. Relationships between tables
+
+It acts as the blueprint of the database.
+
+========================================================
+
+MAIN ENTITIES
+
+1. USERS
+2. STOCKS
+3. PORTFOLIO
+4. PAPER_TRADING
+5. WATCHLIST
+6. AI_DIARY
+7. AI_WEEKLY_REPORT
+8. LEARNING_PROGRESS
+9. QUIZ
+10. COMMUNITY_POST
+11. LEADERBOARD
+12. ADMIN
+
+========================================================
+
+ENTITY RELATIONSHIP FLOW
+
+                USERS
+                  │
+     ┌────────────┼────────────┐
+     │            │            │
+     ▼            ▼            ▼
+PORTFOLIO   PAPER_TRADING   WATCHLIST
+     │            │            │
+     └──────┬─────┴─────┬──────┘
+            ▼           ▼
+                STOCKS
+
+     USERS
+       │
+       ├────────► AI_DIARY
+
+       ├────────► AI_WEEKLY_REPORT
+
+       ├────────► LEARNING_PROGRESS
+
+       ├────────► COMMUNITY_POST
+
+       └────────► LEADERBOARD
+
+========================================================
+
+RELATIONSHIPS
+
+USERS → PORTFOLIO
+One User can have many Portfolio records.
+
+USERS → PAPER_TRADING
+One User can perform many trades.
+
+USERS → WATCHLIST
+One User can save many stocks.
+
+USERS → AI_DIARY
+One User can create many diary entries.
+
+USERS → AI_WEEKLY_REPORT
+One User can have multiple reports.
+
+USERS → LEARNING_PROGRESS
+One User can complete many lessons.
+
+USERS → COMMUNITY_POST
+One User can create many posts.
+
+USERS → LEADERBOARD
+One User has one leaderboard record.
+
+STOCKS → PORTFOLIO
+One Stock can appear in many portfolios.
+
+STOCKS → PAPER_TRADING
+One Stock can be traded by many users.
+
+STOCKS → WATCHLIST
+One Stock can be saved by many users.
+
+========================================================
+
+DATABASE STRUCTURE
+
+USERS
+│
+├── PORTFOLIO
+│      │
+│      └── STOCKS
+│
+├── PAPER_TRADING
+│      │
+│      └── STOCKS
+│
+├── WATCHLIST
+│      │
+│      └── STOCKS
+│
+├── AI_DIARY
+│
+├── AI_WEEKLY_REPORT
+│
+├── LEARNING_PROGRESS
+│
+├── COMMUNITY_POST
+│
+└── LEADERBOARD
+
+========================================================
+
+PURPOSE OF ER DIAGRAM
+
+✔ Understand Database Structure
+
+✔ Identify Relationships
+
+✔ Reduce Data Redundancy
+
+✔ Help Backend Development
+
+✔ Help API Development
+
+✔ Make Database Scalable
+
+========================================================
+
+STATUS
+
+Day 7 Completed
+
+Next:
+Day 8 - Folder Structure
+Day 8 - GitHub Setup
+
+========================================================

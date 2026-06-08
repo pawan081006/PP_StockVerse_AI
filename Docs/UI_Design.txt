@@ -1,0 +1,354 @@
+========================================================
+PP_StockVerse AI
+06_UI_Design.txt
+========================================================
+
+PROJECT UI THEME
+
+Theme:
+Modern • Minimal • Premium • AI Powered
+
+Primary Color:
+#2563EB (Blue)
+
+Secondary Color:
+#22C55E (Green)
+
+Accent Color:
+#7C3AED (Purple)
+
+Background:
+#0F172A (Dark Navy)
+
+Card Color:
+#1E293B
+
+Text Color:
+#FFFFFF
+
+Design Style:
+Glassmorphism + Neon Glow + Smooth Animations
+
+========================================================
+
+APP SCREEN FLOW
+
+Splash Screen
+      │
+      ▼
+Onboarding
+      │
+      ▼
+Login / Register
+      │
+      ▼
+Dashboard
+ ├───────────────┬───────────────┬──────────────┐
+ ▼               ▼               ▼              ▼
+Market      Portfolio      Learning      Profile
+ ▼               ▼               ▼
+Stock Detail   Paper Trade    AI Mentor
+ ▼
+AI Analysis
+
+========================================================
+
+SCREEN 1
+SPLASH SCREEN
+
+• Animated Logo
+• Animated Stock Chart
+• Loading Animation
+• Tagline
+
+Learn • Analyze • Practice • Grow
+
+========================================================
+
+SCREEN 2
+ONBOARDING
+
+Page 1
+Learn Stock Market
+
+Page 2
+Practice Paper Trading
+
+Page 3
+Grow With AI Mentor
+
+Get Started Button
+
+========================================================
+
+SCREEN 3
+LOGIN SCREEN
+
+Email
+
+Password
+
+Login Button
+
+Google Login
+
+Forgot Password
+
+Register
+
+========================================================
+
+SCREEN 4
+REGISTER SCREEN
+
+Full Name
+
+Email
+
+Mobile
+
+Password
+
+Confirm Password
+
+Register Button
+
+========================================================
+
+SCREEN 5
+HOME DASHBOARD
+
+Welcome User
+
+Portfolio Value
+
+Today's Profit
+
+Market Overview
+
+Top Gainers
+
+Top Losers
+
+Watchlist
+
+AI Suggestion
+
+Continue Learning
+
+Latest News
+
+========================================================
+
+BOTTOM NAVIGATION
+
+🏠 Home
+
+📈 Market
+
+💼 Portfolio
+
+📚 Learn
+
+👤 Profile
+
+========================================================
+
+SCREEN 6
+MARKET
+
+Search Stock
+
+Trending
+
+Top Gainers
+
+Top Losers
+
+Most Active
+
+Sector Wise
+
+AI Recommendations
+
+========================================================
+
+SCREEN 7
+STOCK DETAILS
+
+Company Name
+
+Current Price
+
+Live Chart
+
+Overview
+
+Financials
+
+AI Analysis
+
+News
+
+Buy
+
+Sell
+
+AI Explain
+
+========================================================
+
+SCREEN 8
+PAPER TRADING
+
+Virtual Balance
+
+Select Stock
+
+Price
+
+Quantity
+
+Buy
+
+Sell
+
+Order History
+
+Profit / Loss
+
+========================================================
+
+SCREEN 9
+PORTFOLIO
+
+Holdings
+
+Allocation
+
+Performance
+
+Current Value
+
+Today's Profit
+
+Portfolio Health Score
+
+AI Suggestion
+
+========================================================
+
+SCREEN 10
+AI MENTOR
+
+Chat Interface
+
+Ask Questions
+
+Explain Concepts
+
+Investment Guide
+
+Risk Analysis
+
+Learning Path
+
+========================================================
+
+SCREEN 11
+LEARNING FEED
+
+XP Progress
+
+Lessons
+
+Quiz
+
+Articles
+
+Videos
+
+Badges
+
+Achievements
+
+========================================================
+
+SCREEN 12
+COMMUNITY
+
+Posts
+
+Comments
+
+Likes
+
+Trending Discussions
+
+Follow Users
+
+========================================================
+
+SCREEN 13
+PROFILE
+
+Profile Image
+
+XP Level
+
+Achievements
+
+Settings
+
+Dark Mode
+
+Help
+
+Logout
+
+========================================================
+
+UI FEATURES
+
+✔ Dark Theme
+
+✔ Glassmorphism Cards
+
+✔ TradingView Style Charts
+
+✔ Smooth Animations
+
+✔ Rounded Cards
+
+✔ AI Chat Bubble
+
+✔ Responsive Design
+
+✔ Mobile Friendly
+
+✔ Desktop Friendly
+
+✔ Professional Dashboard
+
+========================================================
+
+DESIGN INSPIRATION
+
+Groww
+TradingView
+CoinMarketCap
+Zerodha
+Robinhood
+
+Combined with AI + Learning + Paper Trading
+
+========================================================
+
+STATUS
+
+Day 6 Completed
+
+Next:
+07_ER_Diagram.txt
+
+========================================================

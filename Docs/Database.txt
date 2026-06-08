@@ -1,0 +1,158 @@
+# PP_StockVerse AI - Database Design
+
+## Database Name
+
+pp_stockverse_ai
+
+---
+
+1. USERS TABLE
+
+* user_id (Primary Key)
+* full_name
+* email
+* password
+* mobile
+* profile_image
+* xp_points
+* level
+* created_at
+
+---
+
+2. STOCKS TABLE
+
+* stock_id
+* stock_symbol
+* company_name
+* sector
+* current_price
+* market_cap
+* pe_ratio
+* updated_at
+
+---
+
+3. PAPER_TRADING TABLE
+
+* trade_id
+* user_id
+* stock_id
+* trade_type (BUY/SELL)
+* quantity
+* price
+* total_amount
+* trade_date
+
+---
+
+4. PORTFOLIO TABLE
+
+* portfolio_id
+* user_id
+* stock_id
+* quantity
+* average_price
+* current_value
+* profit_loss
+
+---
+
+5. WATCHLIST TABLE
+
+* watchlist_id
+* user_id
+* stock_id
+* added_date
+
+---
+
+6. AI_DIARY TABLE
+
+* diary_id
+* user_id
+* stock_id
+* emotion
+* notes
+* ai_feedback
+* created_at
+
+---
+
+7. AI_WEEKLY_REPORT TABLE
+
+* report_id
+* user_id
+* report_date
+* performance
+* mistakes
+* ai_suggestion
+
+---
+
+8. LEARNING_PROGRESS TABLE
+
+* progress_id
+* user_id
+* lesson_name
+* completed
+* xp_earned
+
+---
+
+9. QUIZ TABLE
+
+* quiz_id
+* question
+* option_a
+* option_b
+* option_c
+* option_d
+* correct_answer
+
+---
+
+10. COMMUNITY_POST TABLE
+
+* post_id
+* user_id
+* title
+* content
+* likes
+* comments
+* created_at
+
+---
+
+11. LEADERBOARD TABLE
+
+* leaderboard_id
+* user_id
+* xp_points
+* ranking
+
+---
+
+12. ADMIN TABLE
+
+* admin_id
+* admin_name
+* email
+* password
+
+---
+
+Relationships
+
+User → Portfolio
+User → Paper Trading
+User → Watchlist
+User → AI Diary
+User → Weekly Report
+User → Learning Progress
+User → Community Posts
+
+Stocks → Portfolio
+Stocks → Paper Trading
+Stocks → Watchlist
+Stocks → AI Diary

@@ -1,0 +1,85 @@
+# PP_StockVerse AI - API Documentation
+
+## Authentication APIs
+
+* POST /api/auth/register
+* POST /api/auth/login
+* POST /api/auth/forgot-password
+* GET /api/user/profile
+* PUT /api/user/update
+
+---
+
+## Stock APIs
+
+* GET /api/stocks
+* GET /api/stocks/{symbol}
+* GET /api/stocks/search
+* GET /api/stocks/top-gainers
+* GET /api/stocks/top-losers
+
+---
+
+## Watchlist APIs
+
+* POST /api/watchlist/add
+* GET /api/watchlist
+* DELETE /api/watchlist/remove
+
+---
+
+## Paper Trading APIs
+
+* POST /api/trade/buy
+* POST /api/trade/sell
+* GET /api/trade/history
+
+---
+
+## Portfolio APIs
+
+* GET /api/portfolio
+* GET /api/portfolio/health
+* GET /api/portfolio/performance
+
+---
+
+## AI APIs
+
+* POST /api/ai/chat
+* POST /api/ai/news-summary
+* POST /api/ai/mentor
+* POST /api/ai/diary-analysis
+
+---
+
+## Learning APIs
+
+* GET /api/learning/feed
+* GET /api/learning/quiz
+* POST /api/learning/submit
+
+---
+
+## Community APIs
+
+* POST /api/community/post
+* GET /api/community/posts
+* POST /api/community/comment
+
+---
+
+## Leaderboard APIs
+
+* GET /api/leaderboard
+
+---
+
+## Admin APIs
+
+* GET /api/admin/users
+* GET /api/admin/reports
+* DELETE /api/admin/user
+
+```
+```
