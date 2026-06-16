@@ -1,20 +1,24 @@
-spring:
-  application:
-    name: stockverse-backend
 
-  datasource:
-    url: jdbc:mysql://localhost:3306/pp_stockverse_ai
-    username: root
-    password: pawan@08
-    driver-class-name: com.mysql.cj.jdbc.Driver
+  spring:
+    application:
+      name: stockverse-backend
 
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
+    datasource:
+      url: jdbc:mysql://localhost:3306/pp_stockverse_ai
+      username: root
+      password: pawan@08
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
       hibernate:
-        format_sql: true
+        ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
 
-server:
-  port: 8080
+  server:
+    port: 8080
+
+
+
