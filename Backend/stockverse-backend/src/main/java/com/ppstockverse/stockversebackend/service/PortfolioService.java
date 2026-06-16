@@ -57,7 +57,6 @@ public class PortfolioService {
         }
 
         double profit = currentValue - investment;
-
         double profitPercent = (profit / investment) * 100;
 
         return new PortfolioProfitResponse(
@@ -67,5 +66,31 @@ public class PortfolioService {
                 profit,
                 profitPercent
         );
+    }
+
+    // Sell Stock
+    public Portfolio sellStock(Long userId, Long stockId, Integer quantity) {
+
+        Portfolio portfolio =
+                portfolioRepository.findByUserIdAndStockId(userId, stockId);
+
+        if (portfolio == null) {
+            throw new RuntimeException("Stock not found in portfolio!");
+        }
+
+        if (portfolio.getQuantity() < quantity) {
+            throw new RuntimeException("Not enough shares to sell!");
+        }
+
+        int remainingQuantity = portfolio.getQuantity() - quantity;
+
+        if (remainingQuantity == 0) {
+            portfolioRepository.delete(portfolio);
+            return null;
+        }
+
+        portfolio.setQuantity(remainingQuantity);
+
+        return portfolioRepository.save(portfolio);
     }
 }

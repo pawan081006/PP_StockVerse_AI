@@ -2,6 +2,7 @@ package com.ppstockverse.stockversebackend.controller;
 
 import com.ppstockverse.stockversebackend.dto.PortfolioProfitResponse;
 import com.ppstockverse.stockversebackend.dto.PortfolioValueResponse;
+import com.ppstockverse.stockversebackend.dto.SellStockRequest;
 import com.ppstockverse.stockversebackend.entity.Portfolio;
 import com.ppstockverse.stockversebackend.service.PortfolioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +44,16 @@ public class PortfolioController {
     public PortfolioProfitResponse getProfit(@PathVariable Long userId) {
 
         return portfolioService.calculateProfit(userId);
+    }
+
+    // Sell Stock
+    @PostMapping("/sell")
+    public Portfolio sellStock(@RequestBody SellStockRequest request) {
+
+        return portfolioService.sellStock(
+                request.getUserId(),
+                request.getStockId(),
+                request.getQuantity()
+        );
     }
 }
