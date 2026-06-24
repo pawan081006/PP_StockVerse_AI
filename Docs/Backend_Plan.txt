@@ -1,0 +1,73 @@
+PP_StockVerse AI - Backend Plan
+
+Technology:
+- Java 17
+- Spring Boot
+- Maven
+- MySQL
+- JPA/Hibernate
+- REST API
+- JWT Authentication
+- Lombok
+
+Project Structure:
+
+controller/
+service/
+repository/
+entity/
+dto/
+config/
+security/
+exception/
+util/
+
+Modules:
+
+1. Authentication
+- Register
+- Login
+- JWT Token
+
+2. User Profile
+- Update Profile
+- Change Password
+
+3. Learning Module
+- Courses
+- Lessons
+- Quiz
+
+4. Stock Module
+- Company List
+- Stock Details
+- Watchlist
+
+5. Paper Trading
+- Buy Stock
+- Sell Stock
+- Portfolio
+
+6. AI Module
+- AI Analysis
+- AI Recommendation
+
+7. Community Module
+- Posts
+- Comments
+- Likes
+
+8. Admin Module
+- Manage Users
+- Manage Courses
+
+Database:
+MySQL
+
+API Type:
+REST API
+
+Future:
+WebSocket
+Notification
+Email OTP
