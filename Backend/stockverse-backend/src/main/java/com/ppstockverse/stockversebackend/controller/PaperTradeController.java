@@ -1,5 +1,7 @@
 package com.ppstockverse.stockversebackend.controller;
 
+import com.ppstockverse.stockversebackend.dto.HoldingResponse;
+import com.ppstockverse.stockversebackend.dto.PortfolioSummaryResponse;
 import com.ppstockverse.stockversebackend.entity.PaperTrade;
 import com.ppstockverse.stockversebackend.service.PaperTradeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,19 +16,44 @@ public class PaperTradeController {
     @Autowired
     private PaperTradeService paperTradeService;
 
-    // Buy Stock
-    @PostMapping
+    // BUY STOCK
+    @PostMapping("/buy")
     public PaperTrade buyStock(@RequestBody PaperTrade paperTrade) {
+
         return paperTradeService.buyStock(paperTrade);
     }
 
-    // Get User Trades
+    // SELL STOCK
+    @PostMapping("/sell")
+    public PaperTrade sellStock(@RequestBody PaperTrade paperTrade) {
+
+        return paperTradeService.sellStock(paperTrade);
+    }
+
+    // GET USER TRADES
     @GetMapping("/{userId}")
     public List<PaperTrade> getUserTrades(@PathVariable Long userId) {
+
         return paperTradeService.getUserTrades(userId);
     }
 
-    // Delete Trade
+    // GET USER HOLDINGS
+    @GetMapping("/holdings/{userId}")
+    public List<HoldingResponse> getUserHoldings(
+            @PathVariable Long userId) {
+
+        return paperTradeService.getUserHoldings(userId);
+    }
+
+    // GET PORTFOLIO SUMMARY
+    @GetMapping("/summary/{userId}")
+    public PortfolioSummaryResponse getPortfolioSummary(
+            @PathVariable Long userId) {
+
+        return paperTradeService.getPortfolioSummary(userId);
+    }
+
+    // DELETE TRADE
     @DeleteMapping("/{id}")
     public String deleteTrade(@PathVariable Long id) {
 

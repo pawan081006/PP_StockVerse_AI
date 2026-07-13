@@ -33,7 +33,8 @@ public class UserService {
     // Login User
     public UserResponse loginUser(UserLoginRequest request) {
 
-        User user = userRepository.findByEmail(request.getEmail());
+        User user = userRepository.findByEmail(request.getEmail())
+                .orElse(null);
 
         if (user == null) {
             throw new RuntimeException("User not found!");

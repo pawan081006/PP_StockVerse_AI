@@ -1,7 +1,6 @@
 package com.ppstockverse.stockversebackend.entity;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
 @Entity
@@ -20,6 +19,10 @@ public class PaperTrade {
 
     private Double buyPrice;
 
+    private Double sellPrice;
+
+    private String tradeType;
+
     private LocalDateTime tradeTime;
 
     public PaperTrade() {
@@ -27,12 +30,15 @@ public class PaperTrade {
 
     public PaperTrade(Long id, Long userId, Long stockId,
                       Integer quantity, Double buyPrice,
+                      Double sellPrice, String tradeType,
                       LocalDateTime tradeTime) {
         this.id = id;
         this.userId = userId;
         this.stockId = stockId;
         this.quantity = quantity;
         this.buyPrice = buyPrice;
+        this.sellPrice = sellPrice;
+        this.tradeType = tradeType;
         this.tradeTime = tradeTime;
     }
 
@@ -74,6 +80,22 @@ public class PaperTrade {
 
     public void setBuyPrice(Double buyPrice) {
         this.buyPrice = buyPrice;
+    }
+
+    public Double getSellPrice() {
+        return sellPrice;
+    }
+
+    public void setSellPrice(Double sellPrice) {
+        this.sellPrice = sellPrice;
+    }
+
+    public String getTradeType() {
+        return tradeType;
+    }
+
+    public void setTradeType(String tradeType) {
+        this.tradeType = tradeType;
     }
 
     public LocalDateTime getTradeTime() {
