@@ -1,11 +1,15 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Sidebar from "./components/Sidebar";
+
 import Dashboard from "./pages/Dashboard";
 import Portfolio from "./pages/Portfolio";
+import PaperTrading from "./pages/PaperTrading";
 
 function App() {
+
   return (
+
     <BrowserRouter>
 
       <div className="flex">
@@ -13,6 +17,11 @@ function App() {
         <Sidebar />
 
         <Routes>
+
+          <Route
+            path="/"
+            element={<Navigate to="/dashboard" replace />}
+          />
 
           <Route
             path="/dashboard"
@@ -24,7 +33,12 @@ function App() {
             element={<Portfolio />}
           />
 
-          {/* Default page */}
+          <Route
+            path="/papertrading"
+            element={<PaperTrading />}
+          />
+
+          {/* Default Route */}
           <Route
             path="*"
             element={<Navigate to="/dashboard" replace />}
@@ -35,7 +49,9 @@ function App() {
       </div>
 
     </BrowserRouter>
+
   );
+
 }
 
 export default App;

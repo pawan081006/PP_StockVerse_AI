@@ -28,24 +28,49 @@ function Sidebar() {
           </Link>
         </li>
 
-        <li className="hover:text-green-400 cursor-pointer">
-          ⭐ Watchlist
+        <li>
+          <Link
+            to="/watchlist"
+            className="hover:text-green-400 cursor-pointer"
+          >
+            ⭐ Watchlist
+          </Link>
         </li>
 
-        <li className="hover:text-green-400 cursor-pointer">
-          📈 Paper Trading
+        <li>
+          <Link
+            to="/papertrading"
+            className="hover:text-green-400 cursor-pointer"
+          >
+            📈 Paper Trading
+          </Link>
         </li>
 
-        <li className="hover:text-green-400 cursor-pointer">
-          🤖 AI Mentor
+        <li>
+          <Link
+            to="/aimentor"
+            className="hover:text-green-400 cursor-pointer"
+          >
+            🤖 AI Mentor
+          </Link>
         </li>
 
-        <li className="hover:text-green-400 cursor-pointer">
-          📰 News
+        <li>
+          <Link
+            to="/news"
+            className="hover:text-green-400 cursor-pointer"
+          >
+            📰 News
+          </Link>
         </li>
 
-        <li className="hover:text-green-400 cursor-pointer">
-          ⚙ Settings
+        <li>
+          <Link
+            to="/settings"
+            className="hover:text-green-400 cursor-pointer"
+          >
+            ⚙ Settings
+          </Link>
         </li>
 
       </ul>
