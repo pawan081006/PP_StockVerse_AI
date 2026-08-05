@@ -1,8 +1,18 @@
+import { useState } from "react";
+
 import Navbar from "../components/Navbar";
 import TradeForm from "../components/TradeForm";
 import TradeHistory from "../components/TradeHistory";
 
 function PaperTrading() {
+
+  const [refresh, setRefresh] = useState(false);
+
+  const refreshTradeHistory = () => {
+
+    setRefresh(!refresh);
+
+  };
 
   return (
 
@@ -25,12 +35,16 @@ function PaperTrading() {
 
       {/* Trade Form */}
       <div className="mt-8">
-        <TradeForm />
+
+        <TradeForm onTradeSuccess={refreshTradeHistory} />
+
       </div>
 
       {/* Trade History */}
       <div className="mt-8">
-        <TradeHistory />
+
+        <TradeHistory refresh={refresh} />
+
       </div>
 
     </div>

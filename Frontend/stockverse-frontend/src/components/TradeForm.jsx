@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function TradeForm() {
+function TradeForm({ onTradeSuccess }) {
 
   const [stockId, setStockId] = useState("");
   const [quantity, setQuantity] = useState("");
@@ -11,12 +11,10 @@ function TradeForm() {
   const handleBuy = async () => {
 
     const tradeData = {
-
       userId: 1,
       stockId: Number(stockId),
       quantity: Number(quantity),
       buyPrice: Number(buyPrice)
-
     };
 
     try {
@@ -42,7 +40,8 @@ function TradeForm() {
 
       alert("✅ Stock Purchased Successfully!");
 
-      // Reset Form
+      onTradeSuccess();
+
       setStockId("");
       setQuantity("");
       setBuyPrice("");
@@ -53,6 +52,56 @@ function TradeForm() {
       console.error(error);
 
       alert("❌ Buy Failed!");
+
+    }
+
+  };
+
+  // SELL STOCK
+  const handleSell = async () => {
+
+    const tradeData = {
+      userId: 1,
+      stockId: Number(stockId),
+      quantity: Number(quantity),
+      sellPrice: Number(sellPrice)
+    };
+
+    try {
+
+      const response = await fetch(
+        "http://localhost:8080/api/papertrade/sell",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(tradeData)
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Sell Failed");
+      }
+
+      const data = await response.json();
+
+      console.log("Sell Success:", data);
+
+      alert("✅ Stock Sold Successfully!");
+
+      onTradeSuccess();
+
+      setStockId("");
+      setQuantity("");
+      setBuyPrice("");
+      setSellPrice("");
+
+    } catch (error) {
+
+      console.error(error);
+
+      alert("❌ Sell Failed!");
 
     }
 
@@ -149,6 +198,7 @@ function TradeForm() {
         </button>
 
         <button
+          onClick={handleSell}
           className="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-xl font-bold"
         >
           SELL
